@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseII\src\generation\PhotonGenerator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseII\src\generation\PhotonGeneratorOptics.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseII\src\generation\PhotonGeneratorGenerate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseII\src\config\PhaseIIConfig.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseII\src\io\PhaseIIOutput.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseII\src\optics\OpticsModels.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseII\src\runtime\main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\projects\CERN-2026\SimOnly-1\PhaseII\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7329E6E1-4A5B-35CC-96C6-5C769805A3FE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

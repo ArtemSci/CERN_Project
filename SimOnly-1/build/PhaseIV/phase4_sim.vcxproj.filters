@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\processing\DigiProcessor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\processing\DigiProcessorModel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\processing\DigiProcessorWaveform.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\processing\DigiProcessorProcess.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\sources\HitSource.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\config\PhaseIVConfig.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\io\PhaseIVOutput.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\runtime\main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\projects\CERN-2026\SimOnly-1\PhaseIV\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7329E6E1-4A5B-35CC-96C6-5C769805A3FE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CERN-2026 Simulation GUI</title>
+  <link rel="stylesheet" href="/static/styles.css?v=20260221h">
+</head>
+<body>
+  <div id="app">
+    <nav class="action-sidebar">
+      <button class="nav-btn active" data-workspace="design" title="Design">D</button>
+      <button class="nav-btn" data-workspace="setup" title="Setup">S</button>
+      <button class="nav-btn" data-workspace="analysis" title="Analysis">A</button>
+    </nav>
+
+    <div class="workspace-container">
+      <header class="top-header">
+        <div class="header-section">
+          <label class="tiny">Project</label>
+          <select id="projectSelect"></select>
+          <button id="newProjectBtn" class="btn">New</button>
+          <button id="saveBtn" class="btn">Save</button>
+          <button id="importConfigBtn" class="btn">Import Config</button>
+          <button id="exportConfigBtn" class="btn">Export Config</button>
+        </div>
+        <div class="header-section">
+          <button id="runBtn" class="btn btn-primary">Run Phases I-IV</button>
+          <span id="statusBadge" class="status-badge">Idle</span>
+        </div>
+      </header>
+
+      <section id="workspace-design" class="workspace active">
+        <aside class="pane pane-left">
+          <div class="pane-header">Hierarchy</div>
+          <div id="hierarchy" class="scroll"></div>
+          <div class="pane-header">Runs</div>
+          <div id="runList" class="scroll"></div>
+        </aside>
+
+        <main class="pane pane-center">
+          <div class="viewport-wrap">
+            <canvas id="viewportCanvas"></canvas>
+            <div class="overlay-pill" id="cameraInfo">Yaw 0 | Pitch 0 | Zoom 1.0</div>
+          </div>
+          <div class="pane-bottom">
+            <div class="tab-bar">
+              <button class="tab active" data-bottom="logs">Logs</button>
+              <button class="tab" data-bottom="stats">Statistics</button>
+              <button class="tab" data-bottom="plots">Detector Plots</button>
+            </div>
+            <div id="bottom-logs" class="bottom-content active">
+              <pre id="logBox"></pre>
+            </div>
+            <div id="bottom-stats" class="bottom-content">
+              <div id="statsGrid" class="stats-grid"></div>
+            </div>
+          <div id="bottom-plots" class="bottom-content">
+              <div class="plot-controls">
+                <label>Channel
+                  <select id="waveformChannelSelect"></select>
+                </label>
+                <label>Waveform
+                  <select id="waveformModeSelect">
+                    <option value="current_pe">I(t)</option>
+                    <option value="voltage">U(t)</option>
+                  </select>
+                </label>
+              </div>
+              <div class="plot-wrap">
+                <canvas id="timePlot"></canvas>
+                <canvas id="lambdaPlot"></canvas>
+                <canvas id="waveformPlot"></canvas>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <aside class="pane pane-right">
+          <div class="pane-header">
+            Inspector
+            <div class="mode-switch">
+              <button id="modeSimple" class="active">Simple</button>
+              <button id="modeAdvanced">Advanced</button>
+            </div>
+          </div>
+          <div class="toolbar">
+            <button id="addLayerBtn" class="btn">Add Layer</button>
+            <button id="addDetectorBtn" class="btn">Add Detector</button>
+            <button id="addTrackBtn" class="btn">Add Track</button>
+            <button id="uploadAssetBtn" class="btn">Upload Asset</button>
+            <button id="importPdeBtn" class="btn">Import PDE CSV</button>
+          </div>
+          <div class="quick-setup">
+            <div class="quick-row">
+              <label>Template
+                <select id="sensorTemplateSelect">
+                  <option value="sipm_tile">SiPM Tile</option>
+                  <option value="apd_strip">APD Strip</option>
+                  <option value="pmt_disk">PMT Disk</option>
+                  <option value="generic_box">Generic Box Sensor</option>
+                  <option value="generic_cylinder">Generic Cylinder Sensor</option>
+                </select>
+              </label>
+              <label>X <input id="templateX" type="number" step="0.1" value="0"></label>
+              <label>Y <input id="templateY" type="number" step="0.1" value="0"></label>
+              <label>Z <input id="templateZ" type="number" step="0.1" value="0"></label>
+              <button id="addTemplateSensorBtn" class="btn">Add Template Sensor</button>
+            </div>
+          </div>
+          <div class="viz-controls">
+            <div class="viz-row">
+              <label><input id="vizShowPhoton" type="checkbox"> Show photon tracks</label>
+              <label>Count <input id="vizPhotonCount" type="number" min="1" step="1"></label>
+              <button id="vizRerollBtn" class="btn">Reroll</button>
+            </div>
+            <div class="viz-row">
+              <label><input id="vizShowParticle" type="checkbox"> Show particle tracks</label>
+              <label><input id="vizShowDelta" type="checkbox"> Show delta tracks</label>
+              <label><input id="vizShowHits" type="checkbox"> Show detector collisions</label>
+              <label>Delta count <input id="vizDeltaCount" type="number" min="1" step="1"></label>
+              <span id="vizPhotonInfo" class="tiny"></span>
+            </div>
+            <div class="viz-row">
+              <label>Model opacity <input id="vizModelOpacity" type="range" min="0.05" max="1" step="0.05"></label>
+              <span id="vizModelOpacityValue" class="tiny mono-nums"></span>
+            </div>
+          </div>
+          <div id="inspector" class="scroll inspector"></div>
+          <div id="advancedPane" class="advanced-pane hidden">
+            <textarea id="advancedConfig"></textarea>
+            <button id="applyAdvancedBtn" class="btn btn-primary">Apply JSON</button>
+          </div>
+        </aside>
+      </section>
+
+      <section id="workspace-setup" class="workspace">
+        <div class="workspace-simple">
+          <h2>Simulation Setup</h2>
+          <div class="card-grid">
+            <div class="card">
+              <h3>Phase II</h3>
+              <label><input type="checkbox" id="setupCherenkov"> Enable Cherenkov</label>
+              <label><input type="checkbox" id="setupScint"> Enable Scintillation</label>
+            </div>
+            <div class="card">
+              <h3>Phase III</h3>
+              <label><input type="checkbox" id="setupRecordSteps"> Record Step Trace</label>
+              <label>Max Traced Photons <input id="setupTraceMax" type="number"></label>
+            </div>
+            <div class="card">
+              <h3>Phase IV</h3>
+              <label><input type="checkbox" id="setupDirectPde"> Use Direct PDE Table</label>
+              <label>DCR (Hz) <input id="setupDcr" type="number"></label>
+              <label>Bias (V) <input id="setupVbias" type="number" step="0.1"></label>
+              <label>Breakdown (V) <input id="setupVbd" type="number" step="0.1"></label>
+            </div>
+          </div>
+          <button id="applySetupBtn" class="btn btn-primary">Apply Setup Changes</button>
+        </div>
+      </section>
+
+      <section id="workspace-analysis" class="workspace">
+        <div class="workspace-simple">
+          <h2>Analysis</h2>
+          <div id="analysisRunList" class="analysis-list"></div>
+          <div id="analysisMetrics" class="stats-grid"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <input id="configFileInput" type="file" accept=".json" hidden>
+  <input id="assetFileInput" type="file" hidden>
+  <input id="pdeFileInput" type="file" accept=".csv,.txt" hidden>
+
+  <datalist id="materialList">
+    <option value="G4_AIR"></option>
+    <option value="G4_Galactic"></option>
+    <option value="G4_VACUUM"></option>
+    <option value="G4_WATER"></option>
+    <option value="G4_ICE"></option>
+    <option value="G4_Al"></option>
+    <option value="G4_Fe"></option>
+    <option value="G4_Cu"></option>
+    <option value="G4_W"></option>
+    <option value="G4_Pb"></option>
+    <option value="G4_Au"></option>
+    <option value="G4_Ag"></option>
+    <option value="G4_Ti"></option>
+    <option value="G4_C"></option>
+    <option value="G4_GRAPHITE"></option>
+    <option value="G4_Be"></option>
+    <option value="G4_Si"></option>
+    <option value="G4_Ge"></option>
+    <option value="G4_SILICON_DIOXIDE"></option>
+    <option value="G4_Al2O3"></option>
+    <option value="G4_BGO"></option>
+    <option value="G4_PbWO4"></option>
+    <option value="G4_CESIUM_IODIDE"></option>
+    <option value="G4_SODIUM_IODIDE"></option>
+    <option value="G4_POLYSTYRENE"></option>
+    <option value="G4_PLASTIC_SC_VINYLTOLUENE"></option>
+    <option value="G4_PLEXIGLASS"></option>
+    <option value="G4_MYLAR"></option>
+    <option value="G4_TEFLON"></option>
+    <option value="G4_KAPTON"></option>
+    <option value="G4_POLYETHYLENE"></option>
+    <option value="G4_POLYPROPYLENE"></option>
+    <option value="G4_NYLON-6-6"></option>
+    <option value="G4_lAr"></option>
+    <option value="G4_Ar"></option>
+    <option value="G4_Xe"></option>
+    <option value="G4_lXe"></option>
+    <option value="G4_Ne"></option>
+    <option value="G4_He"></option>
+    <option value="G4_H"></option>
+    <option value="G4_CONCRETE"></option>
+    <option value="G4_STAINLESS-STEEL"></option>
+    <option value="G4_BRASS"></option>
+    <option value="G4_BRONZE"></option>
+    <option value="G4_GLASS_PLATE"></option>
+    <option value="G4_Pyrex_Glass"></option>
+    <option value="G4_MgF2"></option>
+    <option value="G4_CaF2"></option>
+    <option value="G4_BORON_CARBIDE"></option>
+    <option value="G4_G10"></option>
+    <option value="G4_FR4"></option>
+  </datalist>
+
+  <datalist id="particleList">
+    <option value="e-"></option>
+    <option value="e+"></option>
+    <option value="mu-"></option>
+    <option value="mu+"></option>
+    <option value="gamma"></option>
+    <option value="opticalphoton"></option>
+    <option value="pi-"></option>
+    <option value="pi+"></option>
+    <option value="pi0"></option>
+    <option value="kaon+"></option>
+    <option value="kaon-"></option>
+    <option value="kaon0L"></option>
+    <option value="kaon0S"></option>
+    <option value="proton"></option>
+    <option value="anti_proton"></option>
+    <option value="neutron"></option>
+    <option value="anti_neutron"></option>
+    <option value="deuteron"></option>
+    <option value="triton"></option>
+    <option value="alpha"></option>
+    <option value="GenericIon"></option>
+    <option value="nu_e"></option>
+    <option value="anti_nu_e"></option>
+    <option value="nu_mu"></option>
+    <option value="anti_nu_mu"></option>
+    <option value="nu_tau"></option>
+    <option value="anti_nu_tau"></option>
+  </datalist>
+
+  <script src="/static/app.js?v=20260221h"></script>
+</body>
+</html>

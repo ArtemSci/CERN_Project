@@ -1,0 +1,14 @@
+D:\projects\CERN-2026\SimOnly-1\PhaseI\src\physics\EventAction.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseI\phase1_sim.dir\Release\EventAction.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseI\src\physics\PrimaryGeneratorAction.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseI\phase1_sim.dir\Release\PrimaryGeneratorAction.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseI\src\physics\RunAction.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseI\phase1_sim.dir\Release\RunAction.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseI\src\physics\StackingAction.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseI\phase1_sim.dir\Release\StackingAction.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseI\src\physics\SteppingAction.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseI\phase1_sim.dir\Release\SteppingAction.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseI\src\physics\TrackingAction.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseI\phase1_sim.dir\Release\TrackingAction.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseI\src\geometry\DetectorConstruction.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseI\phase1_sim.dir\Release\DetectorConstruction.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseI\src\physics\FieldMap.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseI\phase1_sim.dir\Release\FieldMap.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseI\src\io\OutputWriter.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseI\phase1_sim.dir\Release\OutputWriter.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseI\src\config\PhaseIConfig.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseI\phase1_sim.dir\Release\PhaseIConfig.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseI\src\physics\PhaseIField.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseI\phase1_sim.dir\Release\PhaseIField.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseI\src\physics\PhysicsList.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseI\phase1_sim.dir\Release\PhysicsList.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseI\src\physics\SurfaceRegistry.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseI\phase1_sim.dir\Release\SurfaceRegistry.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseI\src\runtime\main.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseI\phase1_sim.dir\Release\main.obj

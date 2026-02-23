@@ -1,0 +1,10 @@
+^D:\PROJECTS\CERN-2026\SIMONLY-1\BUILD\CMAKEFILES\FB24DF283CDD95D7A651C98E02351F89\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/projects/CERN-2026/SimOnly-1 -BD:/projects/CERN-2026/SimOnly-1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/projects/CERN-2026/SimOnly-1/build/SimOnlyPipeline.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

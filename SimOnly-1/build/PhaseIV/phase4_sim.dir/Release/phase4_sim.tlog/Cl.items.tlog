@@ -1,0 +1,8 @@
+D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\processing\DigiProcessor.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIV\phase4_sim.dir\Release\DigiProcessor.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\processing\DigiProcessorModel.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIV\phase4_sim.dir\Release\DigiProcessorModel.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\processing\DigiProcessorWaveform.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIV\phase4_sim.dir\Release\DigiProcessorWaveform.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\processing\DigiProcessorProcess.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIV\phase4_sim.dir\Release\DigiProcessorProcess.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\sources\HitSource.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIV\phase4_sim.dir\Release\HitSource.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\config\PhaseIVConfig.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIV\phase4_sim.dir\Release\PhaseIVConfig.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\io\PhaseIVOutput.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIV\phase4_sim.dir\Release\PhaseIVOutput.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIV\src\runtime\main.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIV\phase4_sim.dir\Release\main.obj

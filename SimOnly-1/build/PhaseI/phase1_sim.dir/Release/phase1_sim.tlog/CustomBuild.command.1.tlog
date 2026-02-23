@@ -1,0 +1,10 @@
+^D:\PROJECTS\CERN-2026\SIMONLY-1\PHASEI\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/projects/CERN-2026/SimOnly-1 -BD:/projects/CERN-2026/SimOnly-1/build --check-stamp-file D:/projects/CERN-2026/SimOnly-1/build/PhaseI/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/projects/CERN-2026/SimOnly-1/build/cmake_install.cmake",
+		"D:/projects/CERN-2026/SimOnly-1/build/PhaseI/cmake_install.cmake",
+		"D:/projects/CERN-2026/SimOnly-1/build/PhaseII/cmake_install.cmake",
+		"D:/projects/CERN-2026/SimOnly-1/build/PhaseIII/cmake_install.cmake",
+		"D:/projects/CERN-2026/SimOnly-1/build/PhaseIV/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

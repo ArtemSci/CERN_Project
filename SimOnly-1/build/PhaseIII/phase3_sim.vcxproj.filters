@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\BoundaryUtils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\DetectorSD.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\PhotonPrimaryInfo.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\PrimaryGeneratorAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\RunAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\SteppingAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\TrackingAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\geometry\DetectorConstruction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\geometry\DetectorConstructionUtils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\geometry\DetectorConstructionMaterials.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\geometry\DetectorConstructionSurfaces.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\geometry\DetectorConstructionBuild.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\config\PhaseIIIConfig.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\io\PhaseIIIOutput.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\PhysicsList.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\sources\PhotonSource.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\runtime\main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\projects\CERN-2026\SimOnly-1\PhaseIII\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7329E6E1-4A5B-35CC-96C6-5C769805A3FE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

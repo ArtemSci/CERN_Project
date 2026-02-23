@@ -1,0 +1,22 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake
+C:/Program Files/Geant4-11.2/lib/cmake/Geant4/Geant4Config.cmake
+C:/Program Files/Geant4-11.2/lib/cmake/Geant4/Geant4ConfigVersion.cmake
+C:/Program Files/Geant4-11.2/lib/cmake/Geant4/Geant4LibraryDepends-release.cmake
+C:/Program Files/Geant4-11.2/lib/cmake/Geant4/Geant4LibraryDepends.cmake
+C:/Program Files/Geant4-11.2/lib/cmake/Geant4/Geant4PackageCache.cmake
+C:/Program Files/Geant4-11.2/lib/cmake/Geant4/Modules/IntelCompileFeatures.cmake
+C:/Program Files/Geant4-11.2/lib/cmake/Geant4/Modules/MSVCCompileFeatures.cmake
+C:/Program Files/Geant4-11.2/lib/cmake/Geant4/PTL/PTLConfig.cmake
+C:/Program Files/Geant4-11.2/lib/cmake/Geant4/PTL/PTLConfigVersion.cmake
+C:/Program Files/Geant4-11.2/lib/cmake/Geant4/PTL/PTLTargets-release.cmake
+C:/Program Files/Geant4-11.2/lib/cmake/Geant4/PTL/PTLTargets.cmake
+C:/Program Files/Geant4-11.2/lib/cmake/Geant4/UseGeant4.cmake
+D:/projects/CERN-2026/SimOnly-1/PhaseIV/CMakeLists.txt

@@ -1,0 +1,17 @@
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\BoundaryUtils.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\BoundaryUtils.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\DetectorSD.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\DetectorSD.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\PhotonPrimaryInfo.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\PhotonPrimaryInfo.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\PrimaryGeneratorAction.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\PrimaryGeneratorAction.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\RunAction.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\RunAction.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\SteppingAction.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\SteppingAction.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\TrackingAction.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\TrackingAction.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\geometry\DetectorConstruction.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\DetectorConstruction.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\geometry\DetectorConstructionUtils.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\DetectorConstructionUtils.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\geometry\DetectorConstructionMaterials.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\DetectorConstructionMaterials.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\geometry\DetectorConstructionSurfaces.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\DetectorConstructionSurfaces.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\geometry\DetectorConstructionBuild.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\DetectorConstructionBuild.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\config\PhaseIIIConfig.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\PhaseIIIConfig.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\io\PhaseIIIOutput.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\PhaseIIIOutput.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\physics\PhysicsList.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\PhysicsList.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\sources\PhotonSource.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\PhotonSource.obj
+D:\projects\CERN-2026\SimOnly-1\PhaseIII\src\runtime\main.cc;D:\projects\CERN-2026\SimOnly-1\build\PhaseIII\phase3_sim.dir\Release\main.obj

@@ -1,1 +1,30 @@
+# Geant4 datasets (large local install)
 Geant/
+
+# C/C++ build artifacts
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.recipe
+*.tlog
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local runtime outputs
+Data/project*/
+Data/*/runs/
+Data/*/assets/
+
+# Local IDE/OS files
+.vscode/
+.DS_Store
+Thumbs.db

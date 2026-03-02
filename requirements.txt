@@ -1,2 +1,5 @@
-# This project currently uses only Python standard library modules.
-# No third-party pip packages are required for GUI/server.py.
+# Runtime requirement for GUI/server.py
+# Python == 3.12.10
+#
+# Third-party pip packages:
+# - none

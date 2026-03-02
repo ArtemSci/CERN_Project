@@ -4,6 +4,16 @@ This repository contains the CERN-2026 simulation pipeline (`SimOnly-1`) and loc
 
 The `Geant` folder is intentionally excluded from git because it contains large Geant4 data files.
 
+## GUI Runtime Requirements
+
+To run `GUI/server.py`:
+
+- Python: `3.12.10` (exact version)
+- pip packages: none
+- Libraries used by the server:
+  - Python standard library modules only (version is the Python runtime version above)
+  - `base64`, `copy`, `datetime`, `json`, `mimetypes`, `os`, `re`, `subprocess`, `threading`, `traceback`, `uuid`, `http`, `pathlib`, `typing`, `urllib.parse`
+
 ## Geant4 Compatibility
 
 This codebase is compatible with **Geant4 11.2.x** and expects the Geant data packages below:

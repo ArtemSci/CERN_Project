@@ -9,9 +9,11 @@ The `Geant` folder is intentionally excluded from git because it contains large 
 To run `GUI/server.py`:
 
 - Python: `3.12.10` (exact version)
-- pip packages: none
+- pip packages (exact versions):
+  - `pip==25.3`
+  - `setuptools==70.2.0`
 - Libraries used by the server:
-  - Python standard library modules only (version is the Python runtime version above)
+  - Python standard library modules only (these are part of Python and are not installed via pip)
   - `base64`, `copy`, `datetime`, `json`, `mimetypes`, `os`, `re`, `subprocess`, `threading`, `traceback`, `uuid`, `http`, `pathlib`, `typing`, `urllib.parse`
 
 ## Geant4 Compatibility

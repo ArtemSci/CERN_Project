@@ -1,5 +1,4 @@
 # Runtime requirement for GUI/server.py
 # Python == 3.12.10
-#
-# Third-party pip packages:
-# - none
+pip==25.3
+setuptools==70.2.0

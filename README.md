@@ -16,6 +16,23 @@ To run `GUI/server.py`:
   - Python standard library modules only (these are part of Python and are not installed via pip)
   - `base64`, `copy`, `datetime`, `json`, `mimetypes`, `os`, `re`, `subprocess`, `threading`, `traceback`, `uuid`, `http`, `pathlib`, `typing`, `urllib.parse`
 
+## Python Virtual Environment Setup
+
+From repository root (`CERN-2026/`), run:
+
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip==25.3 setuptools==70.2.0
+python -m pip install -r requirements.txt
+```
+
+If PowerShell blocks activation scripts, run:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
 ## Geant4 Compatibility
 
 This codebase is compatible with **Geant4 11.2.x** and expects the Geant data packages below:
